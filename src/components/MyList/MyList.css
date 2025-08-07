@@ -1,0 +1,94 @@
+.cart-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .property-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 items per row */
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .property-card {
+    background: white;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden; /* Prevent overflow */
+  }
+  
+  .property-card img {
+    width: 100%;
+    height: 200px; /* Set a fixed height */
+    object-fit: cover; /* Ensures images fit properly */
+    border-radius: 5px;
+  }
+  
+  .property-card h3 {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+  
+  .property-card p {
+    font-size: 16px;
+    font-weight: bold;
+    color: green;
+  }
+  
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 10px;
+  }
+  
+  .buy-btn,
+  .remove-btn {
+    flex: 1;
+    margin: 0 5px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  .buy-btn {
+    background-color: green;
+    color: white;
+  }
+  
+  .buy-btn:hover {
+    background-color: darkgreen;
+  }
+  
+  .remove-btn {
+    background-color: red;
+    color: white;
+  }
+  
+  .remove-btn:hover {
+    background-color: darkred;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .property-list {
+      grid-template-columns: repeat(2, 1fr); /* 2 items per row for tablets */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .property-list {
+      grid-template-columns: repeat(1, 1fr); /* 1 item per row for mobile */
+    }
+  }
+  
