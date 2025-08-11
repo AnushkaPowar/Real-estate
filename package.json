@@ -4,8 +4,12 @@
   "main": "index.js",
   
   "engines": {
-   "node": "18.x",
-    "npm": "9.x"
+   "node": "22.x"
+  },
+  "build": {
+    "env": {
+      "NPM_FLAGS": "--legacy-peer-deps"
+    }
   },
   "dependencies": {
   
@@ -800,7 +804,7 @@
   "license": "ISC",
   "description": "",
   "devDependencies": {
-    "eslint": "^9.23.0",
+    "eslint": "^8.30.0",
     "eslint-config-react-app": "^7.0.1"
   },
   "browserslist": {
